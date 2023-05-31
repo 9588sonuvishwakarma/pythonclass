@@ -1,0 +1,48 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	cout<<"enter prices"<<endl;
+	int a;
+	cin>>a;
+	cout<<"enter quantity"<<endl;
+	int b;
+	cin>>b;
+
+	int c = (a*b) - (a*b)*0.1;
+	cout<<c<<endl;
+	int d = c+ c*0.2;
+	cout<<d<<endl;
+
+     cout<<endl<<"enter KM for delivery"<<endl;
+     int e ;
+     cin>>e;
+     int f =0;
+
+	if(e<=3){
+		f =0;
+	}
+	else if(3<e<=6){
+		f = 3*0+(e-3)*10;
+	}
+	else if(6<e<=11){
+		f = 3*0+6*10+(e-6)*15;
+	}
+	else if(11<e<=16){
+		f = 3*0 + (6*10) + (11*15) +(e-11)*20;
+	}
+	else {
+		f = 3*0 + 6*10 + 11 *15 + 16*20 + (e-16)*50;
+	}
+	cout<<f;
+	cout<<endl;
+	int total =0;
+	total = d+f;
+	cout<<total;
+
+
+
+
+
+
+return 0;}
